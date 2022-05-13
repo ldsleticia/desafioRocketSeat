@@ -56,6 +56,12 @@ export function TaskList() {
     setTasks(tasksArray)
   }
 
+  // Nessa parte do código estamos "subindo" somente tarefas que têm um id
+  // diferente do que estamos querendo remover
+  // quando a lista atualiza no setTasks
+  // estamos subindo somente os ids que são diferentes do id que seria removido
+  // assim ele "desaparece" da lista porque ele tinha id igual
+
   return (
     <section className="task-list container">
       <header>
